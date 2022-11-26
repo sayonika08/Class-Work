@@ -1,0 +1,105 @@
+<html>
+<head>
+	<title>jquery1</title>
+	<link src="C:\Users\hp\Documents\Sayo\Bootstrap folder\css\bootstrap.min.css">
+	<script src="C:\Users\hp\Documents\Sayo\Bootstrap folder\jquery-3.6.1.js"></script>
+	<script>
+		$("document").ready(function(){
+			$("#b33").click(function(){
+				$(".p33").hide();
+			});
+		});
+		$("document").ready(function(){
+			$("#b1").click(function(){
+				$(".pp1").hide();
+			});
+		});
+		$("document").ready(function(){
+			$("#b2").click(function(){
+				$("#p1").hide();
+			});
+		});
+		$("document").ready(function(){
+			$("#b2").dblclick(function(){
+				$("#p1").show();
+			});
+		});
+		$("document").ready(function(){
+			$(".d1").mouseenter(function(){
+				$(".d1").css("background-color","yellow");
+			});
+		});
+		$("document").ready(function(){
+			$(".d1").mouseleave(function(){
+				$(".d1").css("background-color","white", "font-size", "30px");
+			});
+		});
+		$("document").ready(function(){
+			$(".d1").mouseup(function(){
+				$(".d1").css("background-color","pink");
+			$(".d1").mousedown(function(){
+				$(".d1").css("background-color","purple");
+			});
+			});
+		});
+		$("document").ready(function(){
+			$(".p33").click(function(){
+				alert("dhurr ho plzz🥱");
+			});
+		});
+		$("document").ready(function(){
+			$(".p3").hover(function(){
+				$(".p3").css("background-color","blue");
+			});
+		});
+		$("document").ready(function(){
+			$(".p41:first").mouseenter(function(){
+				$(".p41:first").css("background-color","pink");
+			$(".p42:last").mouseenter(function(){
+				$(".p42:last").css("background-color","purple");
+			});
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>Jquery1/hide function</h1>
+	<p class="p33">By clicking the button the paragraph will hide.</p>
+	<button id="b33">button</button>
+<br><br>
+<hr><hr>
+<br><br>
+
+	<h1>for class and id/hide function</h1>
+	<p class="pp1">By clicking the button the paragraph will hide.</p>
+	<p id="p1">By clicking the button the paragraph will hide.</p>
+	<button id="b1">button</button>
+	<button id="b2">button</button>
+<br><br>
+<hr><hr>
+<br><br>
+	<div class="d1">
+		<p class="p3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+		<img src="C:\Users\hp\Documents\Sayo\patagobi.webp" height="300" width="300">
+	</div>	
+	<div class="d2">
+		<p class="p41">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+		<p class="p43">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+		<p class="p42">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+	</div>	
+	<table border="1px">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+	</table>
+	<p id="id1">Its gonna change</p>
+	<p id="id2"><img src="C:\Users\hp\Documents\Sayo\patagobi.webp" height="300" width="300">
+	<p><input id="ppp"></p>
+	
+</body>
+</html>

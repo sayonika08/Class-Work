@@ -1,0 +1,103 @@
+<html>
+<head>
+	<title>jquery3</title>
+	<script src="C:\Users\hp\Documents\Sayo\Bootstrap folder\jquery-3.6.1.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#left").click(function(){
+			$("#d1").animate({left:'250px'});
+		});
+	});
+	$(document).ready(function(){
+		$("#right").click(function(){
+			$("#d1").animate({left:'0px'});
+		});
+	});
+	$(document).ready(function(){
+		$("#top").click(function(){
+			$("#d1").animate({top:'250px'});
+		});
+	});
+	$(document).ready(function(){
+		$("#bot").click(function(){
+			$("#d1").animate({top:'0px'});
+		});
+	});
+	$(document).ready(function(){
+		$("#top1").click(function(){
+			$("#d2").animate({top:'250px'},"slow");
+			$("#d2").animate({height:'100px'},"slow");
+			$("#d2").animate({width:'100px'},"slow");
+			$("#d2").animate({left:'250px'},"slow");
+			$("#d2").animate({opacity:'0.5'},"slow");
+			$("#d2").animate({top:'0px'},"slow");
+			$("#d2").animate({left:'0px'},"slow");
+			$("#d2").animate({opacity:'1'},"slow");
+			$("#d2").animate({height:original},"slow");
+			$("#d2").animate({width:original},"slow");
+		});
+	});
+	$(document).ready(function(){
+		$("#b1").click(function(){
+			$("#d3").css({color:'green'}).fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow").fadeOut("slow").fadeIn("slow");
+		});
+	});
+	$(document).ready(function(){
+		$("#b2").click(function(){
+			$("#d4").animate({left:'250px'}).animate({top:'250px'});
+		});
+	});
+	$(document).ready(function(){
+		$("#d5").click(function(){
+			$(this.hide(1000,function(){
+				alert("Hiiii!");
+			});
+		});
+	});
+	$(document).ready(function(){
+		$("#d6").click(function(){
+			$("#b3").hide(1000,function(){
+				alert("Hiiii!");
+			});
+		});
+	});
+	</script>
+	<style>
+	#d1{
+	position:relative;
+	}
+	#d2{
+	position:relative;
+	}
+	#d3{
+	position:relative;
+	}
+	#d4{
+	position:relative;
+	}
+	</style>
+</head>
+<body>
+	<div id="d1"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></div>
+	<button id="left">left</button>
+	<button id="right">right</button>
+	<button id="top">top</button>
+	<button id="bot">buttom</button>
+<hr><br>	
+	<div id="d2"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></div>
+	<button id="top1">button</button>
+<hr><br>	
+	<div id="d3"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></div>
+	<button id="b1">button</button>
+<hr><br>	
+	<div id="d4"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></div>
+	<button id="b2">button</button>
+<hr><br>	
+	<div id="d5"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></div>
+<hr><br>	
+	<div id="d6"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></div>
+	<button id="b3">button</button>
+<hr><br>
+
+</body>     
+</html>

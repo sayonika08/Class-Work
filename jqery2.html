@@ -1,0 +1,104 @@
+<html>
+<head>
+	<title>jquery2</title>
+	<link src="C:\Users\hp\Documents\Sayo\Bootstrap folder\css\bootstrap.min.css">
+	<script src="C:\Users\hp\Documents\Sayo\Bootstrap folder\jquery-3.6.1.js"></script>
+
+	<style>
+		.d1{
+		width:300px;
+		height:300px;
+		border-radius:50%;
+		background-color:pink;
+		overflow:auto;
+		}
+		.d3{
+		display:none;
+		}
+		.d4{
+		width:200px;
+		height:200px;
+		overflow:auto;
+		margin:10px;
+		padding:5px;
+		}
+		#dd1{
+			background-color:cyan;
+		}
+		#dd2{
+			background-color:lightgreen;
+		}
+		#dd3{
+			background-color:tomato;
+		}
+		
+	</style>
+
+	<script>
+		$("document").ready(function(){
+			$("#b1").click(function(){
+				$(".d1").hide(400);
+			});
+		});
+		$("document").ready(function(){
+			$("#b2").dblclick(function(){
+				$(".d1").show("slow");
+			});
+		});
+		$("document").ready(function(){
+			$("#b3").click(function(){
+				$(".d2").hide(function(){
+					$("#b3").text("Show");
+				});
+			});
+		});
+		$("document").ready(function(){
+			$("#b3").dblclick(function(){
+				$(".d2").show(function(){
+					$("#b3").text("Hide");
+				});
+			});
+		});
+		$("document").ready(function(){
+			$("#b4").click(function(){
+				$(".d3").toggle();
+			});
+		});
+		$("document").ready(function(){
+			$("#b5").click(function(){
+				$(".d4").fadeIn("slow");
+			});
+		});
+		$("document").ready(function(){
+			$("#b5").click(function(){
+				$(".d4").fadeOut("slow");
+			});
+		});
+		$(document).ready(function(){
+			$("#b6").click(function(){
+				$(".d4").slideToggle("slow");
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="d1"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p></div>
+	<button id="b1">Hide</button>
+	<button id="b2">Show</button>
+<hr><hr>	
+	<div class="d2"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p></div>
+	<button id="b3">Hide</button>
+<hr><hr>	
+	<div class="d3"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p></div>
+	<button id="b4">Hide</button>
+	<div class="d4" id="dd1"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+	<div class="d4" id="dd2"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+	<div class="d4" id="dd3"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+	<button id="b5">Click ME</button>
+	<button id="b6">slide</button>
+
+<hr><hr>
+	
+</body>
+</html>
